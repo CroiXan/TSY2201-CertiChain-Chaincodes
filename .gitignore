@@ -1,0 +1,5 @@
+/publicdocument/vendor
+privatedocument/go.mod
+publicdocument/go.mod
+privatedocument/go.sum
+publicdocument/go.sum
