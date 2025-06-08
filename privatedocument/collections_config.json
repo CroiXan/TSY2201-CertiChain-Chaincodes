@@ -5,14 +5,22 @@
     "requiredPeerCount": 1,
     "maxPeerCount": 2,
     "blockToLive": 1000000,
-    "memberOnlyRead": true
+    "memberOnlyRead": true,
+    "memberOnlyWrite": true,
+    "endorsementPolicy": {
+    "signaturePolicy":"OR('Org1MSP.member','Org2MSP.member')"
+  }  
   },
   {
     "name": "collectionAuditLogs",
     "policy": "OR('Org1MSP.member','Org2MSP.member')",
-    "requiredPeerCount": 1,
+    "requiredPeerCount": 0,
     "maxPeerCount": 2,
-    "blockToLive": 0,
-    "memberOnlyRead": true
+    "blockToLive": 3,
+    "memberOnlyRead": true,
+    "memberOnlyWrite": true,
+    "endorsementPolicy": {
+    "signaturePolicy":"OR('Org1MSP.member','Org2MSP.member')"
+  }  
   }
 ]
